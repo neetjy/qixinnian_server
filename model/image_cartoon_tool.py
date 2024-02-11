@@ -140,7 +140,7 @@ def handle(image_path: str, output_dir: str, type=2, device='cpu'):
     if type == 1:
         _checkpoint = './weights/paprika.pt'
     elif type == 2:
-        _checkpoint = './weights/face_paint_512_v2.pt'
+        _checkpoint = './model/weights/face_paint_512_v2.pt'
     else:
         raise Exception('type not support')
     os.makedirs(output_dir, exist_ok=True)
